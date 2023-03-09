@@ -14,7 +14,7 @@ steps:
     image: alpine/git
     pull: if-not-exists
     commands:
-      - git clone https://github.com/gitops-cookbook/pacman-kikd.git .
+      - git clone https://github.com/osamafayyaz3/pacman-kikd.git .
       - git checkout $DRONE_COMMIT
   - name: maven-build
     image: maven:3-jdk-11
